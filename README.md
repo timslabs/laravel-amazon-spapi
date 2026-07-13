@@ -22,7 +22,7 @@ You continue to call official `SpApi\Api\...` classes; this package configures a
 ## Requirements
 
 - PHP 8.3+
-- Laravel 11 or 12
+- Laravel 10, 11, or 12
 
 ## Installation
 

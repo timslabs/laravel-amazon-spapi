@@ -21,20 +21,20 @@
         "php": "^8.3",
         "amzn-spapi/sdk": "^1.0",
         "guzzlehttp/guzzle": "^7.9",
-        "illuminate/cache": "^11.0|^12.0",
-        "illuminate/database": "^11.0|^12.0",
-        "illuminate/events": "^11.0|^12.0",
-        "illuminate/queue": "^11.0|^12.0",
-        "illuminate/support": "^11.0|^12.0"
+        "illuminate/cache": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/events": "^10.0|^11.0|^12.0",
+        "illuminate/queue": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
     },
     "require-dev": {
         "laravel/pint": "^1.18",
         "mockery/mockery": "^1.6",
-        "orchestra/testbench": "^9.0|^10.0",
-        "phpunit/phpunit": "^11.0"
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
     },
     "suggest": {
-        "illuminate/bus": "Required to dispatch report/feed queue jobs.",
+        "illuminate/bus": "Required to dispatch report/feed queue jobs (^10|^11|^12).",
         "mockery/mockery": "Required to use Tims\\AmazonSpApi\\Testing\\SpApiFake."
     },
     "autoload": {

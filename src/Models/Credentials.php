@@ -26,13 +26,13 @@ class Credentials extends Model
         'seller_id',
     ];
 
-    protected function casts(): array
-    {
-        return [
-            'client_secret' => 'encrypted',
-            'refresh_token' => 'encrypted',
-        ];
-    }
+    /**
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'client_secret' => 'encrypted',
+        'refresh_token' => 'encrypted',
+    ];
 
     public function seller(): BelongsTo
     {
