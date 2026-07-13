@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.0/phpunit.xsd"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    cacheDirectory=".phpunit.cache"
+    beStrictAboutOutputDuringTests="true"
+    failOnRisky="true"
+    failOnWarning="true"
+>
+    <testsuites>
+        <testsuite name="Amazon SP-API Laravel Package">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+    </source>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="APP_KEY" value="base64:2fl+KtvkdphvQyVj8sRqXrJRqGqYBOtQ0qJjZ4qVqY8="/>
+        <env name="CACHE_STORE" value="array"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="AMAZON_SPAPI_INSTALLATION_TYPE" value="single"/>
+        <env name="AMAZON_SPAPI_LWA_CLIENT_ID" value="test-client-id"/>
+        <env name="AMAZON_SPAPI_LWA_CLIENT_SECRET" value="test-client-secret"/>
+        <env name="AMAZON_SPAPI_LWA_REFRESH_TOKEN" value="test-refresh-token"/>
+        <env name="AMAZON_SPAPI_ENDPOINT_REGION" value="NA"/>
+        <env name="AMAZON_SPAPI_APPLICATION_ID" value="amzn1.sp.solution.example"/>
+        <env name="AMAZON_SPAPI_REDIRECT_URI" value="https://example.com/amazon/callback"/>
+    </php>
+</phpunit>
